@@ -6,6 +6,7 @@ import java.lang.reflect.Method;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
@@ -20,6 +21,7 @@ import org.smart4j.smart_framework.bean.Handler;
 import org.smart4j.smart_framework.bean.Param;
 import org.smart4j.smart_framework.bean.View;
 import org.smart4j.smart_framework.helper.BeanHelper;
+import org.smart4j.smart_framework.helper.ClassHelper;
 import org.smart4j.smart_framework.helper.ConfigHelper;
 import org.smart4j.smart_framework.helper.ControllerHelper;
 import org.smart4j.smart_framework.util.ArrayUtil;
@@ -48,18 +50,21 @@ public class DispatcherServlet extends HttpServlet {
 		//注册处理静态资源的默认Servlet
 		ServletRegistration defaultServlet = servletContext.getServletRegistration("default");
 		defaultServlet.addMapping(ConfigHelper.getAppAssetPath()+"*");
-		
 	}
 	
 	@Override
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-	
+		
+		Set<Class<?>> clazz = ClassHelper.getClassSet();
+		int len = clazz.size();
+		
 		//获取请求方法与请求路径
-		String requestMethod = request.getMethod().toLowerCase();
 		String requestPath = request.getPathInfo();
+		String requestMethod = request.getMethod().toLowerCase();
+		
 		//获取Action 处理器
-		Handler handler = ControllerHelper.getHandler(requestMethod, requestPath);
+		Handler handler = ControllerHelper.getHandler(requestMethod, requestPath); 
 		
 		if(handler != null){
 			//获取Controller 类及其Bean 实例

@@ -12,6 +12,7 @@ import org.smart4j.smart_framework.bean.Data;
 import org.smart4j.smart_framework.bean.Param;
 import org.smart4j.smart_framework.bean.View;
 
+
 /**
  * 处理客户管理相关请求
  * @author hp
@@ -20,6 +21,7 @@ import org.smart4j.smart_framework.bean.View;
 @Controller
 public class CustomerController {
 
+	
 	@Inject
 	private CustomerService customerService;
 	
@@ -57,6 +59,7 @@ public class CustomerController {
 	 */
 	@Action("post:/customer_create")
 	public Data createSubmit(Param param) {
+		System.out.println("63="+param.getMap());
 		Map<String,Object> fieldMap = param.getMap();
 		boolean result = customerService.createCustomer(fieldMap);
 		return new Data(result);

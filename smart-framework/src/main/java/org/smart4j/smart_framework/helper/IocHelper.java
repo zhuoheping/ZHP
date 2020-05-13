@@ -25,6 +25,7 @@ public final class IocHelper {
 
 	
 	static{
+		
 		//获取所有的Bean 类与Bean 实例之间的映射关系（简称Bean Map）
 		Map<Class<?>,Object> beanMap = BeanHelper.getBeanMap();
 		if(CollectionUtil.isNotEmpty(beanMap)){
@@ -45,13 +46,14 @@ public final class IocHelper {
 							Object beanFieldInstance = beanMap.get(beanFieldClass);
 							if(beanFieldInstance != null){
 								//通过反射初始化 BeanField 的值
-								ReflectionUtil.setField(beanInstance, beanField, beanFieldInstance);
+								ReflectionUtil.setField(beanInstance,beanField,beanFieldInstance);
 							}
 						}
 					}
 				}
 			}
 		}
+		
 		
 	}
 	

@@ -24,7 +24,7 @@ public class HelperLoader {
 			ControllerHelper.class	//封装Controller 实例和方法， key 为请求路径和请求方法， value Controller 实例 和 请求方法
 		};
 		for(Class<?> cls:classList){
-			ClassUtil.loadClass(cls.getName(),false);
+			ClassUtil.loadClass(cls.getName(),true);
 		}
 	}
 }

@@ -195,7 +195,7 @@ public class DatabaseHelper {
 			return false;
 		}
 		
-		String sql = "inset into "+ getTableName(entityClass);
+		String sql = "insert into "+ getTableName(entityClass);
 		StringBuilder columns=new StringBuilder("(");
 		StringBuilder values=new StringBuilder("(");
 		for(String fieldName:fieldMap.keySet()) {

@@ -107,14 +107,15 @@ public final class ClassUtil {
 	public static Set<Class<?>> getClassSet(String packageName){
 		Set<Class<?>> classSet = new HashSet<Class<?>>();
 		try{
-			Enumeration<URL> urls = getClassLoader().getResources(packageName.replace(".", "/"));  //Enumeration 跟 Iterator 作用是否一样
+			String packName = packageName.replace(".", "/");
+			Enumeration<URL> urls = getClassLoader().getResources(packName);  //Enumeration 跟 Iterator 作用是否一样
 			while(urls.hasMoreElements()){
 				URL url = urls.nextElement();
 				
 				if(url != null){
 					String protocol = url.getProtocol();
 					if(protocol.equals("file")){
-						String packagePath = url.getPath().replaceAll("%20", " ");
+						String packagePath = url.getPath().replaceAll("%20", "");
 						addClass(classSet,packagePath,packageName);
 					}else if(protocol.equals("jar")){
 						JarURLConnection jarUrlConnection = (JarURLConnection) url.openConnection();
@@ -154,7 +155,10 @@ public final class ClassUtil {
 		File[] files = new File(packagePath).listFiles(new FileFilter(){
 
 			public boolean accept(File file) {
-				return (file.isFile() && file.getName().endsWith(".class")) || file.isDirectory();
+				boolean isFile = file.isFile();
+				boolean flag = file.getName().endsWith(".class");
+				boolean isDirectory = file.isDirectory();
+				return (isFile &&  flag || isDirectory);
 			}
 		});
 		
@@ -189,17 +193,9 @@ public final class ClassUtil {
 	}
 	
 	public static void main(String[] args){
-		Set<String> set = new HashSet<String>();
+
 		
-		System.out.println(set.add("小学生"));
-		System.out.println(set.add("大学生"));
-		System.out.println(set.add("小学生"));
-		
-/*		Enumeration<String> its = set.getParameterNames();
-		while(its.hasMoreElements()){
-			System.out.println(its.nextElement());
-		}*/
-		
+		Class<?> clazz = loadClass("org.smart4j.chapter3.Student",false);
 	}
 
 	

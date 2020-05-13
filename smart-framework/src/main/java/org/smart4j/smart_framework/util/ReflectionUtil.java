@@ -5,6 +5,8 @@ import java.lang.reflect.Method;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.smart4j.smart_framework.bean.Param;
+
 
 /**
  * 使用ClassHlper 类可以获取所加载的类， 但是无法通过类来实例化对象， 因此我们需要提供一个反射工具类， 让它封装java 反射相关的api
@@ -39,6 +41,7 @@ public final class ReflectionUtil {
 		
 		Object result;
 		try{
+			
 			method.setAccessible(true);
 			result = method.invoke(obj, objects);
 		}catch(Exception e){
@@ -53,7 +56,7 @@ public final class ReflectionUtil {
 	/*
 	 * 设置成员变量的值
 	 */
-	public static void setField(Object obj,Field field,Object...objects){
+	public static void setField(Object obj,Field field,Object objects){
 		try{
 			field.setAccessible(true);
 			field.set(obj, objects);

@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.smart4j.chapter3.helper.DatabaseHelper;
 import org.smart4j.chapter3.model.Customer;
+import org.smart4j.smart_framework.annotation.Service;
 
 
 
@@ -15,6 +16,7 @@ import org.smart4j.chapter3.model.Customer;
  * @author hp
  *
  */
+@Service
 public class CustomerService {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(CustomerService.class);

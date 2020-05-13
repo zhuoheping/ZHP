@@ -23,6 +23,7 @@
 				<td>${customer.telephone }</td>
 				<td>${customer.email }</td>
 				<td>
+					<a href="${BASE }/customer_create">新增</a>
 					<a href="${BASE }/customer_edit?id=${customer.id}">编辑</a>
 					<a href="${BASE }/customer_delete?id=${customer.id}">删除</a>
 				</td>
