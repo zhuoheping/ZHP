@@ -41,19 +41,38 @@
     </dependency>
     
     <!-- slf4j -->
-    <dependency>
+    <!-- <dependency>
     	<groupId>org.slf4j</groupId>
     	<artifactId>slf4j-log4j12</artifactId>
     	<version>1.7.7</version>
-    </dependency>
+    </dependency> -->
+    <dependency>
+	    <groupId>org.slf4j</groupId>
+	    <artifactId>slf4j-api</artifactId>
+	    <version>1.7.22</version>
+	</dependency>
+
+	<dependency>
+	    <groupId>org.slf4j</groupId>
+	    <artifactId>slf4j-log4j12</artifactId>
+	    <version>1.7.22</version>
+	</dependency>
+
     
     <!-- mysql -->
-    <dependency>
+<!--     <dependency>
     	<groupId>mysql</groupId>
     	<artifactId>mysql-connector-java</artifactId>
     	<version>5.1.33</version>
     	<scope>runtime</scope>
-    </dependency>
+    </dependency> -->
+    
+    <dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>6.0.6</version>
+	    <scope>runtime</scope>
+	</dependency>
     
     <!-- json 序列化工具  jackson-->
     <dependency>

@@ -1,7 +1,6 @@
 package org.smart4j.chapter3.helper;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -48,6 +47,7 @@ public class DatabaseHelper {
 		
 		Properties conf = PropsUtil.loadProps("config.properties");
 		String driver=conf.getProperty("jdbc.driver");
+		System.out.println(driver);
 		String username=conf.getProperty("jdbc.username");
 		String url=conf.getProperty("jdbc.url");
 		String password=conf.getProperty("jdbc.password");

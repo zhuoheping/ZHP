@@ -38,6 +38,11 @@ import org.smart4j.smart_framework.util.StringUtil;
  */
 public class DispatcherServlet extends HttpServlet {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	@Override
 	public void init(ServletConfig servletConfig) throws ServletException {
 		//初始化相关Helper 类
