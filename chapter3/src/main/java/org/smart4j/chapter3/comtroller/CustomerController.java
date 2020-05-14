@@ -25,6 +25,7 @@ public class CustomerController {
 	@Inject
 	private CustomerService customerService;
 	
+
 	
 	/**
 	 * 进入客户列表界面
@@ -62,6 +63,7 @@ public class CustomerController {
 		System.out.println("63="+param.getMap());
 		Map<String,Object> fieldMap = param.getMap();
 		boolean result = customerService.createCustomer(fieldMap);
+		System.out.println("65");
 		return new Data(result);
 	}
 	
