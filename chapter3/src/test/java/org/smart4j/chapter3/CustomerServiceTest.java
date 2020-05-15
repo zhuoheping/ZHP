@@ -31,7 +31,7 @@ public class CustomerServiceTest {
 	
 	@Before
 	public void init() throws IOException {
-		/*//初始化数据库
+		//初始化数据库
 		String file = "sql/customer_202004160859.sql";
 		System.out.println("1");
 		InputStream is = Thread.currentThread().getContextClassLoader().getResourceAsStream(file);
@@ -46,7 +46,7 @@ public class CustomerServiceTest {
 		}
 		
 		
-		DatabaseHelper.executeUpdate(sb.toString());*/
+		DatabaseHelper.executeUpdate(sb.toString());
 	}
 	
 	
