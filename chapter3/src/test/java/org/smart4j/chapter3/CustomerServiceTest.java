@@ -17,7 +17,7 @@ import org.smart4j.chapter3.service.CustomerService;
 import junit.framework.Assert;
 
 /**
- * µ¥Ôª²âÊÔÀà
+ * å•å…ƒæµ‹è¯•ç±»
  * @author hp
  *
  */
@@ -31,7 +31,7 @@ public class CustomerServiceTest {
 	
 	@Before
 	public void init() throws IOException {
-		//³õÊ¼»¯Êı¾İ¿â
+		//åˆå§‹åŒ–æ•°æ®åº“
 		String file = "sql/customer_202004160859.sql";
 		System.out.println("1");
 		InputStream is = Thread.currentThread().getContextClassLoader().getResourceAsStream(file);

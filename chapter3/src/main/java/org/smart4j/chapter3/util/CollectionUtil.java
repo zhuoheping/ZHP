@@ -7,7 +7,7 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.collections4.MapUtils;
 
 /**
- * ¼¯ºÏ¹¤¾ßÀà
+ * é›†åˆå·¥å…·ç±»
  * @author hp
  *
  */
@@ -16,7 +16,7 @@ public class CollectionUtil {
 	
 	
 	/**
-	 * ÅĞ¶ÏCollection ÊÇ·ñÎª¿Õ
+	 * åˆ¤æ–­Collection æ˜¯å¦ä¸ºç©º
 	 */
 	public static boolean isEmpty(Collection<?> collection) {
 		
@@ -24,21 +24,21 @@ public class CollectionUtil {
 		}
 	
 	/**
-	 * ÅĞ¶ÏCollection ÊÇ·ñÎª¿Õ
+	 * åˆ¤æ–­Collection æ˜¯å¦ä¸ºç©º
 	 */
 	public static boolean isNotEmpty(Collection<?> collection) {
 		return !isEmpty(collection);
 	}
 	
 	/**
-	 * ÅĞ¶ÏMap ÊÇ·ñÎª¿Õ
+	 * åˆ¤æ–­Map æ˜¯å¦ä¸ºç©º
 	 */
 	public static boolean isEmpty(Map<?,?> map) {
 		return MapUtils.isEmpty(map);
 	}
 	
 	/**
-	 *ÅĞ¶ÏMap ÊÇ·ñ·Ç¿Õ 
+	 *åˆ¤æ–­Map æ˜¯å¦éç©º 
 	 */
 	public static boolean isNotEmpty(Map<?,?> map) {
 		return !isEmpty(map);

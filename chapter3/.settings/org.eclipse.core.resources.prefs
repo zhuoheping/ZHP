@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+encoding//src/main/resources/config.properties=UTF-8
+encoding//src/main/resources/log4j.properties=UTF-8
+encoding//src/main/resources/smart.properties=UTF-8
+encoding//src/test/java/org/smart4j/chapter3/CustomerServiceTest.java=UTF-8
+encoding//src/test/resources/config.properties=UTF-8
+encoding//src/test/resources/sql/customer_202004160859.sql=UTF-8
+encoding/<project>=UTF-8

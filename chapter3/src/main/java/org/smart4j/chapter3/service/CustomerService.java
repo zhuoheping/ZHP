@@ -12,7 +12,7 @@ import org.smart4j.smart_framework.annotation.Service;
 
 
 /**
- * 提供客户数据服务
+ * 鎻愪緵瀹㈡埛鏁版嵁鏈嶅姟
  * @author hp
  *
  */
@@ -23,7 +23,7 @@ public class CustomerService {
 	
 	
 	/**
-	 * 获取客户列表
+	 * 鑾峰彇瀹㈡埛鍒楄〃
 	 * @param keyword
 	 * @return
 	 */
@@ -35,7 +35,7 @@ public class CustomerService {
 	}
 	
 	/**
-	 * 获取客户
+	 * 鑾峰彇瀹㈡埛
 	 * @param id
 	 * @return
 	 */
@@ -45,7 +45,7 @@ public class CustomerService {
 	}
 	
 	/**
-	 * 更新客户
+	 * 鏇存柊瀹㈡埛
 	 * @param id
 	 * @param fieldMap
 	 * @return
@@ -56,7 +56,7 @@ public class CustomerService {
 	}
 	
 	/**
-	 * 删除客户
+	 * 鍒犻櫎瀹㈡埛
 	 * @param id
 	 * @return
 	 */
@@ -66,7 +66,7 @@ public class CustomerService {
 	}
 	
 	/**
-	 * 创建客户
+	 * 鍒涘缓瀹㈡埛
 	 * @param fieldMap
 	 * @return
 	 */

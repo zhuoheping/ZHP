@@ -2,12 +2,12 @@ package org.smart4j.chapter3.util;
 
 /**
  * StringUtil
- * @description: ×Ö·û´®¹¤¾ßÀà
+ * @description: å­—ç¬¦ä¸²å·¥å…·ç±»
  **/
 public class StringUtil {
 
    /**
-    * ÅĞ¶Ï×Ö·û´®ÊÇ·ñÎª¿Õ
+    * åˆ¤æ–­å­—ç¬¦ä¸²æ˜¯å¦ä¸ºç©º
     * @param str
     * @return
     */
@@ -16,8 +16,8 @@ public class StringUtil {
    }
 
    /**
-    * ÅĞ¶Ï×Ö·û´®ÊÇ·ñ·Ç¿Õ
-    * @param str Èç¹û²»Îª¿Õ£¬Ôò·µ»Øtrue
+    * åˆ¤æ–­å­—ç¬¦ä¸²æ˜¯å¦éç©º
+    * @param str å¦‚æœä¸ä¸ºç©ºï¼Œåˆ™è¿”å›true
     * @return
     */
    public static boolean isNotEmpty(String str){

@@ -1,7 +1,7 @@
 package org.smart4j.chapter3.model;
 
 /**
- * ¿Í»§
+ * å®¢æˆ·
  * @author hp
  *
  */
@@ -11,23 +11,23 @@ public class Customer {
 	 */
 	private long id;
 	/**
-	 * ¿Í»§Ãû³Æ
+	 * å®¢æˆ·åç§°
 	 */
 	private String name;
 	/**
-	 * ÁªÏµÈË
+	 * è”ç³»äºº
 	 */
 	private String contact;
 	/**
-	 * µç»°ºÅÂë
+	 * ç”µè¯å·ç 
 	 */
 	private String telephone;
 	/**
-	 * ÓÊÏäµØÖ·
+	 * é‚®ç®±åœ°å€
 	 */
 	private String email;
 	/**
-	 * ±¸×¢
+	 * å¤‡æ³¨
 	 */
 	private String remark;
 	public long getId() {

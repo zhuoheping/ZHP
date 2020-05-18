@@ -14,7 +14,7 @@ import org.smart4j.smart_framework.bean.View;
 
 
 /**
- * 处理客户管理相关请求
+ * 澶勭悊瀹㈡埛绠＄悊鐩稿叧璇锋眰
  * @author hp
  *
  */
@@ -28,7 +28,7 @@ public class CustomerController {
 
 	
 	/**
-	 * 进入客户列表界面
+	 * 杩涘叆瀹㈡埛鍒楄〃鐣岄潰
 	 */
 	@Action("get:/customer")
 	public View index(Param param) {
@@ -38,7 +38,7 @@ public class CustomerController {
 	
 	
 	/**
-	 * 显示客户基本信息
+	 * 鏄剧ず瀹㈡埛鍩烘湰淇℃伅
 	 */
 	@Action("get:/customer_show")
 	public View show(Param param) {
@@ -48,7 +48,7 @@ public class CustomerController {
 	}
 	
 	/**
-	 *进入创建客户界面
+	 *杩涘叆鍒涘缓瀹㈡埛鐣岄潰
 	 */
 	@Action("get:/customer_create")
 	public View create(Param param) {
@@ -56,7 +56,7 @@ public class CustomerController {
 	}
 	
 	/**
-	 * 处理创建客户请求 
+	 * 澶勭悊鍒涘缓瀹㈡埛璇锋眰 
 	 */
 	@Action("post:/customer_create")
 	public Data createSubmit(Param param) {
@@ -69,7 +69,7 @@ public class CustomerController {
 	
 	
 	/**
-	 * 进入编辑客户界面
+	 * 杩涘叆缂栬緫瀹㈡埛鐣岄潰
 	 */
 	@Action("get:/customer_edit")
 	public View edit(Param param) {
@@ -79,7 +79,7 @@ public class CustomerController {
 	}
 	
 	/**
-	 * 处理编辑客户请求
+	 * 澶勭悊缂栬緫瀹㈡埛璇锋眰
 	 */
 	@Action("put:/customer_edit")
 	public Data editSubmit(Param param) {
@@ -90,7 +90,7 @@ public class CustomerController {
 	}
 	
 	/**
-	 * 处理删除客户请求
+	 * 澶勭悊鍒犻櫎瀹㈡埛璇锋眰
 	 */
 	@Action("delete:/customer_edit")
 	public Data delete(Param param) {

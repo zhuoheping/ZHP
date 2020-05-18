@@ -5,7 +5,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**
- * ¶¯Ì¬´úÀí
+ * åŠ¨æ€ä»£ç†
  * @author hp
  *
  */
@@ -26,11 +26,11 @@ public class DynamicProxy implements InvocationHandler {
 	}
 	
 	private void before() {
-		System.out.println("Ö®Ç°");
+		System.out.println("ä¹‹å‰");
 	}
 	
 	private void after() {
-		System.out.println("Ö®ºó");
+		System.out.println("ä¹‹å");
 	}
 	
 	@SuppressWarnings("unchecked")

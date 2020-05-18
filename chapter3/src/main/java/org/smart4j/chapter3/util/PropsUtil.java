@@ -9,7 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * ÊôĞÔÎÄ¼ş¹¤¾ßÀà
+ * å±æ€§æ–‡ä»¶å·¥å…·ç±»
  * @author hp
  *
  */
@@ -19,7 +19,7 @@ public class PropsUtil {
 	private static final Logger LOGGER = LoggerFactory.getLogger(PropsUtil.class);
 	
 	/**
-	 * ¼ÓÔØÊôĞÔÎÄ¼ş
+	 * åŠ è½½å±æ€§æ–‡ä»¶
 	 * @param fileName
 	 * @return
 	 */
@@ -52,7 +52,7 @@ public class PropsUtil {
 	
 	
 	/**
-	 * »ñÈ¡×Ö·ûĞÍÊôĞÔ£¨Ä¬ÈÏÖµÎª¿Õ×Ö·û´®£©
+	 * è·å–å­—ç¬¦å‹å±æ€§ï¼ˆé»˜è®¤å€¼ä¸ºç©ºå­—ç¬¦ä¸²ï¼‰
 	 */
 	public static String getString(Properties props,String key) {
 		return getString(props,key,"");
@@ -60,7 +60,7 @@ public class PropsUtil {
 	
 	
 	/**
-	 * »ñÈ¡×Ö·ûĞÍÊôĞÔ£¨¿ÉÖ¸¶¨Ä¬ÈÏÖµ£©
+	 * è·å–å­—ç¬¦å‹å±æ€§ï¼ˆå¯æŒ‡å®šé»˜è®¤å€¼ï¼‰
 	 */
 	public static String getString(Properties props,String key,String defaultValue) {
 		String value = defaultValue;
@@ -74,7 +74,7 @@ public class PropsUtil {
 	
 	
 	/**
-	 * »ñÈ¡ÊıÖµĞÍÊôĞÔ£¨Ä¬ÈÏÖµÎª0£©
+	 * è·å–æ•°å€¼å‹å±æ€§ï¼ˆé»˜è®¤å€¼ä¸º0ï¼‰
 	 */
 	public static int getInt(Properties props,String key) {
 		return getInt(props,key,0);
@@ -82,7 +82,7 @@ public class PropsUtil {
 	
 	
 	/**
-	 * »ñÈ¡ÊıÖµĞÍÊôĞÔ£¨¿ÉÖ¸¶¨Ä¬ÈÏÖµ£©
+	 * è·å–æ•°å€¼å‹å±æ€§ï¼ˆå¯æŒ‡å®šé»˜è®¤å€¼ï¼‰
 	 */
 	public static int getInt(Properties props,String key,int defaultValue) {
 		int value = defaultValue;
@@ -95,14 +95,14 @@ public class PropsUtil {
 	
 	
 	/**
-	 * »ñÈ¡²¼¶ûĞÍÊôĞÔ£¨Ä¬ÈÏÖµÎªfalse£©
+	 * è·å–å¸ƒå°”å‹å±æ€§ï¼ˆé»˜è®¤å€¼ä¸ºfalseï¼‰
 	 */
 	public static boolean getBoolean(Properties props,String key) {
 		return getBoolean(props,key,false);
 	}
 	
 	/**
-	 * »ñÈ¡²¼¶ûĞÍÊôĞÔ£¨¿ÉÖ¸¶¨Ä¬ÈÏÖµ£©
+	 * è·å–å¸ƒå°”å‹å±æ€§ï¼ˆå¯æŒ‡å®šé»˜è®¤å€¼ï¼‰
 	 */
 	public static boolean getBoolean(Properties props,String key,Boolean defaultValue) {
 		boolean value = defaultValue;

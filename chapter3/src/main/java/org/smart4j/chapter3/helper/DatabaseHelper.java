@@ -20,7 +20,7 @@ import org.smart4j.chapter3.util.PropsUtil;
 
 
 /**
- * Êı¾İ¿â²Ù×÷ÖúÊÖÀà
+ * æ•°æ®åº“æ“ä½œåŠ©æ‰‹ç±»
  * @author hp
  *
  */
@@ -30,7 +30,7 @@ public class DatabaseHelper {
 	private static final Logger LOGGER = LoggerFactory.getLogger(DatabaseHelper.class);
 	private static final QueryRunner QUERY_RUNNER;
 	/**
-	 * ÎªÁËÈ·±£Ò»¸öÏß³ÌÖĞÖ»ÓĞÒ»¸öconnction  ÎÒÃÇ¶ñÒâÊ¹ÓÃThreadLocal À´´æ·Å±¾µØÏß³Ì±äÁ¿ ¡£
+	 * ä¸ºäº†ç¡®ä¿ä¸€ä¸ªçº¿ç¨‹ä¸­åªæœ‰ä¸€ä¸ªconnction  æˆ‘ä»¬æ¶æ„ä½¿ç”¨ThreadLocal æ¥å­˜æ”¾æœ¬åœ°çº¿ç¨‹å˜é‡ ã€‚
 	 */
 	private static final ThreadLocal<Connection> CONNECTION_HOLDER;
 	private static final BasicDataSource DATA_SOURCE;
@@ -39,7 +39,7 @@ public class DatabaseHelper {
 
 	
 	/**
-	 * »ñÈ¡ÅäÖÃ
+	 * è·å–é…ç½®
 	 */
 	static {
 		CONNECTION_HOLDER = new ThreadLocal<Connection>();
@@ -62,7 +62,7 @@ public class DatabaseHelper {
 
 	
 	/**
-	 * »ñÈ¡Êı¾İ¿âµÄÁ¬½Ó
+	 * è·å–æ•°æ®åº“çš„è¿æ¥
 	 * @return
 	 */
 	public static Connection getConnection() {
@@ -87,7 +87,7 @@ public class DatabaseHelper {
 	}
 	
 	/**
-	 * ¹Ø±ÕÊı¾İ¿âÁ¬½Ó     ----------Ê¹ÓÃÁ¬½Ó³Ø¼¼Êõºó¾Í²»ÓÃ¹ÜËü¹Ø±ÕµÄÎÊÌâ
+	 * å…³é—­æ•°æ®åº“è¿æ¥     ----------ä½¿ç”¨è¿æ¥æ± æŠ€æœ¯åå°±ä¸ç”¨ç®¡å®ƒå…³é—­çš„é—®é¢˜
 	 * @param conn
 	 */
 /*	public static void closeConnection() {
@@ -104,7 +104,7 @@ public class DatabaseHelper {
 	}
 	*/
 	/**
-	 * ²éÑ¯ÁĞ±íÊµÌåÀà·â×°
+	 * æŸ¥è¯¢åˆ—è¡¨å®ä½“ç±»å°è£…
 	 * @param entityClass
 	 * @param sql
 	 * @param params
@@ -125,7 +125,7 @@ public class DatabaseHelper {
 	}
 	
 	/**
-	 * ²éÑ¯µ¥¸öÊµÌå
+	 * æŸ¥è¯¢å•ä¸ªå®ä½“
 	 * @param entityClass
 	 * @param sql
 	 * @param params
@@ -145,7 +145,7 @@ public class DatabaseHelper {
 	}
 	
 	/**
-	 * ¶à±í²éÑ¯·µ»ØlistMap
+	 * å¤šè¡¨æŸ¥è¯¢è¿”å›listMap
 	 * @param sql
 	 * @param params
 	 * @return
@@ -165,7 +165,7 @@ public class DatabaseHelper {
 	}
 	
 	/**
-	 * Ö´ĞĞ¸üĞÂÓï¾ä£¨°üÀ¨update, insert,delete£© 
+	 * æ‰§è¡Œæ›´æ–°è¯­å¥ï¼ˆåŒ…æ‹¬update, insert,deleteï¼‰ 
 	 * @param sql
 	 * @param params
 	 * @return
@@ -184,7 +184,7 @@ public class DatabaseHelper {
 	
 	
 	/**
-	 * ²åÈëÊµÌå
+	 * æ’å…¥å®ä½“
 	 * @param entityClass
 	 * @param fieldMap
 	 * @return
@@ -213,7 +213,7 @@ public class DatabaseHelper {
 	
 	
 	/**
-	 * ¸ù¾İid É¾³ıÊµÌå
+	 * æ ¹æ®id åˆ é™¤å®ä½“
 	 * @param entityClass
 	 * @param id
 	 * @return
@@ -224,7 +224,7 @@ public class DatabaseHelper {
 	}
 	
 	/**
-	 * ¸üĞÂÊµÌå
+	 * æ›´æ–°å®ä½“
 	 * @param entityClass
 	 * @param id
 	 * @param fieldMap
@@ -273,7 +273,7 @@ public class DatabaseHelper {
 		Map<String,Object> map = new HashMap<String,Object>();
 		List<Object> list = new ArrayList<Object>(); 
 		
-		map.put("name", "ÕÅÈı");
+		map.put("name", "å¼ ä¸‰");
 		map.put("age", 12);
 		list.addAll(map.values());
 		Object[] params = list.toArray();
